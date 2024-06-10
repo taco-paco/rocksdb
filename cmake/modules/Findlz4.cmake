@@ -4,6 +4,7 @@
 # lz4_INCLUDE_DIRS - where to find lz4.h, etc.
 # lz4_LIBRARIES - List of libraries when using lz4.
 # lz4_FOUND - True if lz4 found.
+set(CMAKE_FIND_LIBRARY_SUFFIXES .a .lib ${CMAKE_FIND_LIBRARY_SUFFIXES})
 
 find_path(lz4_INCLUDE_DIRS
   NAMES lz4.h

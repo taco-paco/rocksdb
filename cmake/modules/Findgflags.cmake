@@ -4,6 +4,7 @@
 # GFLAGS_INCLUDE_DIR - where to find gflags.h.
 # GFLAGS_LIBRARIES - List of libraries when using gflags.
 # gflags_FOUND - True if gflags found.
+set(CMAKE_FIND_LIBRARY_SUFFIXES .a .lib ${CMAKE_FIND_LIBRARY_SUFFIXES})
 
 find_path(GFLAGS_INCLUDE_DIR
   NAMES gflags/gflags.h)

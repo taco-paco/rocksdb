@@ -4,6 +4,7 @@
 # Snappy_INCLUDE_DIRS - where to find snappy.h, etc.
 # Snappy_LIBRARIES - List of libraries when using snappy.
 # Snappy_FOUND - True if snappy found.
+set(CMAKE_FIND_LIBRARY_SUFFIXES .a .lib ${CMAKE_FIND_LIBRARY_SUFFIXES})
 
 find_path(Snappy_INCLUDE_DIRS
   NAMES snappy.h

@@ -4,6 +4,7 @@
 # ZSTD_INCLUDE_DIRS - where to find zstd.h, etc.
 # ZSTD_LIBRARIES - List of libraries when using zstd.
 # ZSTD_FOUND - True if zstd found.
+set(CMAKE_FIND_LIBRARY_SUFFIXES .a .lib ${CMAKE_FIND_LIBRARY_SUFFIXES})
 
 find_path(ZSTD_INCLUDE_DIRS
   NAMES zstd.h

@@ -4,6 +4,7 @@
 # JeMalloc_INCLUDE_DIRS - where to find jemalloc.h, etc.
 # JeMalloc_LIBRARIES - List of libraries when using jemalloc.
 # JeMalloc_FOUND - True if jemalloc found.
+set(CMAKE_FIND_LIBRARY_SUFFIXES .a .lib ${CMAKE_FIND_LIBRARY_SUFFIXES})
 
 find_path(JeMalloc_INCLUDE_DIRS
   NAMES jemalloc/jemalloc.h
