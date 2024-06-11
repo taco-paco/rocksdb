@@ -187,10 +187,10 @@ else()
   endif()
 
   if(WITH_ZSTD)
-    find_package(zstd REQUIRED)
+    find_package(zstd CONFIG COMPONENTS zstd::libzstd_static)
     add_definitions(-DZSTD)
     include_directories(${ZSTD_INCLUDE_DIRS})
-    list(APPEND THIRDPARTY_LIBS zstd::zstd)
+    list(APPEND THIRDPARTY_LIBS zstd::libzstd_static)
   endif()
 endif()
 
