@@ -154,7 +154,6 @@ else()
   endif()
 
   if(WITH_SNAPPY)
-    find_package(Snappy CONFIG)
     if(NOT Snappy_FOUND)
       find_package(Snappy REQUIRED)
     endif()
