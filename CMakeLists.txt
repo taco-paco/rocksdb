@@ -159,7 +159,7 @@ else()
       find_package(Snappy REQUIRED)
     endif()
     add_definitions(-DSNAPPY)
-    list(APPEND THIRDPARTY_LIBS Snappy::snappy-static)
+    list(APPEND THIRDPARTY_LIBS Snappy::snappy)
   endif()
 
   if(WITH_ZLIB)
